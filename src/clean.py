@@ -29,7 +29,5 @@ RAW_DIR = Path(os.environ.get("RAW_DIR"))
 PROCESSED_DIR = Path(os.environ.get("PROCESSED_DIR"))
 
 for csv_file in RAW_DIR.glob("*.csv"):
-    print("FOUND:", csv_file)
     processed_df = PROCESSED_DIR/csv_file.name
     clean_csv(csv_file, processed_df)
-    print(f"Copied {csv_file.name}")
