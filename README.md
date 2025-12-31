@@ -46,3 +46,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 pip install -e .
 ```
+3. Cofigure .env
+```bash
+RAW_DIR = Path(".../data/raw")
+PROCESSED_DIR = Path(".../data/processed")
+```
