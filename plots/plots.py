@@ -1,5 +1,4 @@
 # Plotting Data migration and AfD votes in Lower Bavaria
-import pandas as pd
 import matplotlib.pyplot as plt
 
 df_nb.plot(x = "Asylbewerber", y = "Stimmenanteile AfD", kind = "bar", title = "Stimmenanteile AfD in den Landkreisen Niederbayerns")
@@ -17,3 +16,4 @@ plt.tight_layout()
 plt.show()
 
 print(df_nb.info())
+
