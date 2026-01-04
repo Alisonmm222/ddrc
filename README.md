@@ -28,7 +28,8 @@ The target group is heterogeneous: it includes both people who are interested in
 │   ├── processed     
 │   └── raw            
 ├── plots            
-│   └── figures        
+│   └── figures     
+├── src   
 ├── requirements.txt   
 
 ```
