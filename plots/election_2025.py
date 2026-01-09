@@ -1,7 +1,7 @@
 from pandas import read_csv
 import matplotlib.pyplot as plt
 
-df = read_csv("/processed/Niederbayern Wahlergebnisse.csv")
+df = read_csv("processed/Niederbayern Wahlergebnisse.csv")
 df = df.drop(columns=["Aggregat", "Kennziffer", "Raumeinheit"])
 
 for c in df.columns:
