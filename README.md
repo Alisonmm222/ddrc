@@ -13,23 +13,22 @@
 
 **Date:** January 2026
 
-## target group analysis
-The primary target group for the project is eligible voters in Lower Bavaria (Niederbayern). 
+## Target Group 
+The primary Target Group for the Project is eligible voters in Lower Bavaria (Niederbayern). 
 This includes people of different age groups, educational levels, and political views who are looking for guidance before an election or who regularly use regional media. 
 The target group is heterogeneous: it includes both people who are interested in politics and people who only engage with politics occasionally.
 
 
 ## Project Organization
 
-```
-├── LICENSE           
+```           
 ├── README.md         
 ├── data    
-│   ├── processed     
-│   └── raw            
-├── plots            
-│   └── figures     
-├── src   
+│   ├── processed   # cleaned data 
+│   └── raw         # original input data          
+├── plots           
+│   └── figures     # plotting scripts and generated plots (.png)
+├── src             # cleaning script
 ├── requirements.txt   
 
 ```
@@ -37,15 +36,11 @@ The target group is heterogeneous: it includes both people who are interested in
 --------
 
 ## Installation
-1. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-2. Install the package and dependencies:
+1. Clone this repository
+```bash 
+git clone https://github.com/Alisonmm222/ddrc
+cd ddrc
+````
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
-pip install -e 
-```
-3. View Results in /plots 
-```
