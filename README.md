@@ -9,7 +9,7 @@
 
 **Topic**: Data Driven Reality Check 
 
-**Authors:** Semanur Asalioglu, Alison Moldovan-Mauer
+**Authors:** Alison Moldovan-Mauer, Semanur Asalioglu
 
 **Date:** January 2026
 
@@ -45,10 +45,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 2. Install the package and dependencies:
 ```bash
 pip install -r requirements.txt
-pip install -e .
+pip install -e 
 ```
-3. Cofigure .env
-```bash
-RAW_DIR = Path(".../data/raw")
-PROCESSED_DIR = Path(".../data/processed")
+3. View Results in /plots 
 ```

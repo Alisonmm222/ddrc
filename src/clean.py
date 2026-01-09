@@ -6,7 +6,11 @@ load_dotenv()
 
 def clean_csv(input_path, output_path):
     df = pd.read_csv(input_path, sep =";")
-
+    """
+    Das ist eine Funktion, die verwendet werden kann, um die Daten aus INKAR so zu bearbeiten, 
+    damit man sie sinnvoll visualisieren kann. 
+    Die Daten aus dem raw Ordner werden bearbeitet und dann im processed Ordner gespeichert.
+    """
     # Cleaning Data
     df.dropna(inplace = True)
     df_nb = df.loc[df["Raumeinheit"].isin(["Kelheim", "Straubing-Bogen", "Straubing", "Freyung-Grafenau", "Passau, Stadt", "Regen", "Deggendorf",

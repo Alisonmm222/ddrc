@@ -1,11 +1,13 @@
 ipython
 jupyterlab
-matplotlib
+matplotlib~=3.9.0
 notebook
-numpy
-pandas
+numpy~=2.0.0
+pandas~=2.3.3
 pip
-python-dotenv
+python-dotenv~=1.1.1
 ruff
 scikit-learn
 -e .
+
+dotenv~=0.9.9
