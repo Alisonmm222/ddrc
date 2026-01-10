@@ -30,14 +30,14 @@ ax1.set_xticks(x)
 ax1.set_xticklabels(df["Gemeinde"], rotation=35, ha="right", fontsize=14)
 ax1.set_ylim(0, 40)
 ax1.set_yticks([0, 10, 20, 30])
-ax1.yaxis.set_major_formatter(mtick.StrMethodFormatter('% {x:.0f}'))
+ax1.yaxis.set_major_formatter(mtick.StrMethodFormatter('{x:.0f} %'))
 
 # land prices on secondary y-axis
 ax2 = ax1.twinx()
 ax2.bar(x + width/2, df["Baulandpreise"], width, color="#FFC422", label="Baulandpreise in qm")
 ax2.set_ylim(0, max(df["Baulandpreise"])*1.1)
 ax2.set_yticks([0, 400, 800, 1200])
-ax2.yaxis.set_major_formatter(mtick.StrMethodFormatter('€ {x:.0f}'))
+ax2.yaxis.set_major_formatter(mtick.StrMethodFormatter('{x:.0f} €'))
 
 # combine legends
 lines_1, labels_1 = ax1.get_legend_handles_labels()
