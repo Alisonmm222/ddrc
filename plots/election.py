@@ -40,7 +40,8 @@ for i, val in enumerate(df_plot["Share"]):
 for spine in plt.gca().spines.values():
     spine.set_visible(False)
 plt.yticks([])
-plt.xticks( fontsize=14)
+plt.xticks(fontsize=14)
 
 plt.tight_layout()
 plt.savefig("plots/election_nb.png", dpi=300)
+plt.show()

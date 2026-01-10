@@ -14,11 +14,11 @@ x = np.arange(len(df_nb["Gemeinde"])) * 1.4
 width = 0.4
 
 plt.figure(figsize=(10,6))
-plt.bar(x - width/2, df_nb["Stimmenanteile AfD"], width, label="AfD", color = "#009EE0")
+plt.bar(x - width/2, df_nb["Stimmenanteile AfD"], width, label="AfD %", color = "#009EE0")
 plt.bar(x + 0.5*width, df_nb["Ausländische Arbeitslose"], width, color="#F25A7D", label="Ausländische Arbeitslose")
 
 # unemployment baseline
-plt.axhline(y=gesamt_alq_ausl, color="#F25A7D", linestyle="--", linewidth=2, label = "Deutschland Ausländische Arbeitslose")
+plt.axhline(y=gesamt_alq_ausl, color="#F25A7D", linestyle="--", linewidth=2, label = "deutschlandweit")
 
 # remove the frame
 for spine in plt.gca().spines.values():

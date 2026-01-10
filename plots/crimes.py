@@ -20,7 +20,7 @@ ax1.set_yticks([0, 10, 20, 30])
 
 # crimes on secondary y-axis
 ax2 = ax1.twinx()
-ax2.bar(x + width/2, df_nb["Straftaten"], width, color="#FFB266", label="Straftaten je 100k")
+ax2.bar(x + width/2, df_nb["Straftaten"], width, color="#FFB266", label="Straftaten je 100.000 Einwohner")
 ax2.set_ylim(0, max(df_nb["Straftaten"])*1.1)  # small margin above
 ax2.set_yticks([0, 4000, 8000, 12000])
 
@@ -29,7 +29,7 @@ lines_1, labels_1 = ax1.get_legend_handles_labels()
 lines_2, labels_2 = ax2.get_legend_handles_labels()
 leg = ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left", fontsize=14)
 leg.set_frame_on(False)
-plt.title("Simmenanteile AfD  vs Straftaten", fontsize=26)
+plt.title("Stimmenanteile AfD  vs Straftaten", fontsize=26)
 
 # remove spines from both axes
 for ax in [ax1, ax2]:
