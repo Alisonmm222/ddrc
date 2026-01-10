@@ -15,7 +15,7 @@ width = 0.4
 
 plt.figure(figsize=(10,6))
 plt.bar(x - width/2, df_nb["Stimmenanteile AfD"], width, label="AfD %", color = "#009EE0")
-plt.bar(x + 0.5*width, df_nb["Ausländische Arbeitslose"], width, color="#F25A7D", label="Ausländische Arbeitslose")
+plt.bar(x + 0.5*width, df_nb["Ausländische Arbeitslose"], width, color="#F25A7D", label="Ausländische Arbeitslose %")
 
 # unemployment baseline
 plt.axhline(y=gesamt_alq_ausl, color="#F25A7D", linestyle="--", linewidth=2, label = "deutschlandweit")
@@ -27,7 +27,7 @@ plt.yticks([])
 plt.xticks( ticks=x, labels=df_nb["Gemeinde"], rotation=35, fontsize=14, ha = "right")
 
 plt.legend(edgecolor="none", fontsize=14)
-plt.title("Stimmenanteile AfD vs Auslädnische AL", fontsize=26)
+plt.title("Stimmenanteile AfD vs Ausländische AL", fontsize=26)
 plt.tight_layout()
 plt.savefig('plots/unemployment.png', dpi=300)
 plt.show()

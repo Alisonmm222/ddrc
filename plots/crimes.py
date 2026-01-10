@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
 from pandas import read_csv
 import numpy as np
 
@@ -12,11 +13,13 @@ width = 0.35
 fig, ax1 = plt.subplots(figsize=(10,6))
 
 # AfD bars on primary y-axis
-ax1.bar(x - width/2, df_nb["Stimmenanteile AfD"], width, color="#009EE0", label="Stimmenanteile AfD")
+ax1.bar(x - width/2, df_nb["Stimmenanteile AfD"], width, color="#009EE0", label="AfD %")
 ax1.set_xticks(x)
 ax1.set_xticklabels(df_nb["Gemeinde"], rotation=35, ha="right", fontsize=14)
 ax1.set_ylim(0, 40)
 ax1.set_yticks([0, 10, 20, 30])
+ax1.yaxis.set_major_formatter(mtick.StrMethodFormatter('{x:.0f} %'))
+
 
 # crimes on secondary y-axis
 ax2 = ax1.twinx()
